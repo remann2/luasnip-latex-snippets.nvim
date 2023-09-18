@@ -73,7 +73,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "floor", name = "floor" }, "\\left\\lfloor $1 \\right\\rfloor$0"),
     parse_snippet({ trig = "mcal", name = "mathcal" }, "\\mathcal{$1}$0"),
     parse_snippet({ trig = "mbf", name = "mathbf" }, "\\mathbf{$1}$0"),
-    parse_snippet({ trig = "bk", name = "parenthesis" }, "\\{$1\\}$0"),
+    parse_snippet({ trig = "bk", name = "parenthesis" }, "\\{$1\\\\}$0"),
     parse_snippet({ trig = "//", name = "Fraction" }, "\\frac{$1}{$2}$0"),
     parse_snippet({ trig = "\\\\\\", name = "setminus" }, "\\setminus"),
     parse_snippet({ trig = "->", name = "to", priority = 100 }, "\\to "),
